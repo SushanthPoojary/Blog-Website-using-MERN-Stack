@@ -1,0 +1,63 @@
+.register {
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("../../images/cubes.png"); */
+    /* font-family: 'Lato', sans-serif; */
+}
+
+.registerBorder {
+    width: 20%;
+    height: 400px;
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    padding: 20px;
+    color: #F9F9F9;
+    background-color: black;
+}
+
+.registerTitle {
+    font-size: 50px;
+}
+
+.registerForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.registerForm > label {
+    margin: 10px 0;
+}
+
+.registerForm > input {
+    padding: 10px;
+    background-color: #F9F9F9;
+    border: none;
+    
+}
+
+.registerButton {
+    margin-top: 20px;
+    background-color: #F9F9F9; 
+    border: none;   
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.registerLoginButton {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background-color: black;
+    color: #F9F9F9;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
