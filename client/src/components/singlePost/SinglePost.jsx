@@ -33,8 +33,12 @@ export default function SinglePost() {
         try {
         
             console.log(user);
-            const res = await axios.delete(`/posts/${post._id}`, {"data": {"username": user.username}});
-            console.log(res);
+            let confirmRes = window.confirm("Do you really want to delete?");
+            if(confirmRes){
+                const res = await axios.delete(`/posts/${post._id}`, {"data": {"username": user.username}});
+                console.log(res);
+                window.alert("Successfully deleted");
+            }
             window.location.replace("/");
                 
         
